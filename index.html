@@ -31,18 +31,26 @@
 </head>
 <body>
     <div class="mx-auto container max-w-full shadow-lg h-full">
-      <div id="header" class="w-full fixed bg-slate-700 px-52">
-        <div class="navbar w-1/2 flex justify-between" id="nav_header">
+      <div id="header" class="w-full fixed bg-slate-800 pl-24 py-2">
+        <div class="navbar max-w-full flex" id="nav_header">
         <div class="w-max flex" id="title">
-          <img src="img/logoWastreaming-01.png" alt="" class="float-right w-20 p-0">
+          <img src="img/logoWastreaming-01.png" alt="" class="float-left w-24 p-0">
         <h1 class="text-white w-max font-bold text-3xl">Wastreaming</h1>
         </div>
-        <div id="nav" class="mx-10 w-max text-white float-right flex-auto">
+        <div id="nav" class="ml-10 w-96 text-white flex justify-evenly">
           <span><a href="#">Home</a></span>
           <span><a href="#">Service</a></span>
           <span><a href="#">Movies</a></span>
           <span><a href="#">Series</a></span>
           <span><a href="#">Page</a></span>
+        </div>
+        <div id="nav2_header" class="navbar-end">
+          <div tabindex="0" class="bg-transparent w-max border border-solid flex p-2 rounded-full dropdown dropdown-left" id="search">
+            <button><img src="img/magnifying-glass-2.png" alt="" class="w-6"></button>
+            <div class="dropdown-content">
+              <input type="text" class="input rounded-full h-10 mr-2">
+            </div>
+          </div>
         </div>
       </div>
       </div>
