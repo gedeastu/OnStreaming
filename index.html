@@ -34,8 +34,8 @@
       <div id="header" class="w-full fixed bg-slate-800 pl-24 py-2">
         <div class="navbar max-w-full flex" id="nav_header">
         <div class="w-max flex" id="title">
-          <img src="img/logoWastreaming-01.png" alt="" class="float-left w-24 p-0">
-        <h1 class="text-white w-max font-bold text-3xl">Wastreaming</h1>
+          <img src="img/logoSearch-01.png" alt="" class="float-left w-12">
+        <h1 class="text-white w-max font-bold text-3xl mx-1">Wastreaming</h1>
         </div>
         <div id="nav" class="ml-10 w-96 text-white flex justify-evenly">
           <span><a href="#">Home</a></span>
@@ -44,11 +44,36 @@
           <span><a href="#">Series</a></span>
           <span><a href="#">Page</a></span>
         </div>
-        <div id="nav2_header" class="navbar-end">
-          <div tabindex="0" class="bg-transparent w-max border border-solid flex p-2 rounded-full dropdown dropdown-left" id="search">
-            <button><img src="img/magnifying-glass-2.png" alt="" class="w-6"></button>
+        <div id="nav2_header" class="navbar-end flex">
+          <div tabindex="0" id="search" class="bg-transparent w-max border border-solid flex p-2 rounded-full dropdown dropdown-left">
+          <label for="" class="swap swap-rotate">
+            <img src="img/magnifying-glass-2.png" alt="" class="w-6 swap-off">
+            <img id="close" src="img/close-3.png" alt="" class="w-6 swap-on">
+          </label>
             <div class="dropdown-content">
-              <input type="text" class="input rounded-full h-10 mr-2">
+              <form action="#" class="w-max">
+              <input placeholder="Search" type="text" class="input rounded-full max-h-10 mx-2 px-5 w-[20rem]">
+              <a href="#" target="_blank"><img src="img/search.png" alt="" class="absolute w-6 right-6 bottom-2 hover:scale-105"></a>
+              </form>
+            </div>
+          </div>
+
+          <div tabindex="0" id="notif" class="ml-4 bg-transparent w-max border border-solid flex p-2 rounded-full dropdown dropdown-end">
+            <label for="">
+              <img src="img/bell.png" alt="" class="w-6">
+            </label>
+            <div class="dropdown-content bg-base-100 mt-10 p-2 w-[19rem] rounded-box shadow-sm border border-solid">
+              <h3 class="pb-2 font-bold">Notifications</h3>
+              <hr class="">
+              <ul class="p-2 flex justify-center">
+                <li class="">
+                <img src="img/myPict.jpg" alt="" class="w-12 rounded-full float-left mr-1">
+                <p class="float-right inline-block px-1">Lorem ipsum dolor sit amet 
+                  <br> consectetur adipisicing elit. 
+                  <br> <span class="text-slate-500 text-sm">10 minutes ago</span>
+                  </p>
+              </li>
+              </ul>
             </div>
           </div>
         </div>
