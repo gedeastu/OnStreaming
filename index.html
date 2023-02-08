@@ -30,7 +30,8 @@
 
 </head>
 <body>
-    <div class="mx-auto container max-w-full shadow-lg h-full">
+    <div class="mx-auto container max-w-full shadow-lg">
+
       <div id="header" class="w-full fixed bg-slate-800 pl-24 py-2">
         <div class="navbar max-w-full flex" id="nav_header">
         <div class="w-max flex" id="title">
@@ -65,20 +66,56 @@
             <div class="dropdown-content bg-base-100 mt-10 p-2 w-[19rem] rounded-box shadow-sm border border-solid">
               <h3 class="pb-2 font-bold">Notifications</h3>
               <hr class="">
-              <ul class="p-2 flex justify-center">
-                <li class="">
-                <img src="img/myPict.jpg" alt="" class="w-12 rounded-full float-left mr-1">
-                <p class="float-right inline-block px-1">Lorem ipsum dolor sit amet 
-                  <br> consectetur adipisicing elit. 
+              <ul class="p-2 inline-block group h-[15rem]">
+                <li class="w-max h-20">
+                <img src="img/myPict.jpg" alt="" class="w-12 float-left rounded-full justify-center mr-1 hover:bg-slate-100 hover:rounded-full">
+                <a href="#" class="float-right inline-block px-1 hover:bg-slate-100 hover:rounded-xl hover:w-max hover:px-1"><span class="">Lorem ipsum dolor sit amet 
+                  <br> consectetur adipisicing elit.</span>
                   <br> <span class="text-slate-500 text-sm">10 minutes ago</span>
-                  </p>
-              </li>
+                </a>
+                </li>
+                <li class="w-max h-20">
+                  <img src="img/myPict.jpg" alt="" class="w-12 rounded-full float-left mr-1 hover:bg-slate-100 hover:rounded-full hover:w-14">
+                  <a href="#" class="float-right inline-block px-1 hover:bg-slate-100 hover:rounded-xl hover:w-max hover:px-1"><span class="">Lorem ipsum dolor sit amet 
+                    <br> consectetur adipisicing elit.</span>
+                    <br> <span class="text-slate-500 text-sm">10 minutes ago</span>
+                  </a>
+                </li>
+                <li class="w-max">
+                  <img src="img/myPict.jpg" alt="" class="w-12 rounded-full float-left mr-1 hover:bg-slate-100 hover:rounded-full hover:w-14">
+                  <a href="#" class="float-right inline-block px-1 hover:bg-slate-100 hover:rounded-xl hover:w-max hover:px-1"><span class="">Lorem ipsum dolor sit amet 
+                    <br> consectetur adipisicing elit.</span>
+                    <br> <span class="text-slate-500 text-sm">10 minutes ago</span>
+                  </a>
+                </li>
               </ul>
             </div>
           </div>
+
+          <div id="profile" class="dropdown dropdown-end">
+            <img src="img/myPict.jpg" alt="" tabindex="0" class="btn btn-circle bg-transparent border-transparent border-box ml-4 border border-solid border-opacity-50 border-slate-700">
+            <ul tabindex="0" class="dropdown-content menu bg-white shadow-sm rounded-md w-[1] p-2 mt-2">
+              <li><a href="#">History</a></li>
+              <li><a href="#">Watchlist</a></li>
+              <li><a href="#">My Account</a></li>
+              <li><a href="#">Log Out</a></li>
+            </ul>
+          </div>
+
+          <div id="subcribe">
+            <div class="btn btn-sm bg-red-500 ml-4 hover:bg-white hover:text-black">
+              Subcribe now
+            </div>
+          </div>
+
         </div>
       </div>
       </div>
+      <div id="hero_header" class="w-full h-[30rem] carousel">
+        <div class="carousel-item w-full relative">
+          <img src="img/theBatman.jpeg" alt="" class="w-full object-cover object-top">
+      </div>
+    </div>
     </div>
 </body>
 </html>
