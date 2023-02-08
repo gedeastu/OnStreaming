@@ -30,13 +30,15 @@
 
 </head>
 <body>
-    <div class="mx-auto container max-w-full shadow-lg">
+    <div class="mx-auto container max-w-full shadow-lg bg-slate-800 h-full">
 
-      <div id="header" class="w-full fixed bg-slate-800 pl-24 py-2">
-        <div class="navbar max-w-full flex" id="nav_header">
-        <div class="w-max flex" id="title">
+      <div id="header" class="w-full fixed bg-slate-800 py-2 shadow-lg navbar h-[7rem]">
+        <div class="navbar max-w-full" id="nav_header">
+
+        <div class="navbar-start ml-5"> 
+        <div class="flex float-left" id="title">
           <img src="img/logoSearch-01.png" alt="" class="float-left w-12">
-        <h1 class="text-white w-max font-bold text-3xl mx-1">Wastreaming</h1>
+        <h1 class="text-white w-max font-bold text-3xl my-auto ml-1">Wastreaming</h1>
         </div>
         <div id="nav" class="ml-10 w-96 text-white flex justify-evenly">
           <span><a href="#">Home</a></span>
@@ -45,7 +47,9 @@
           <span><a href="#">Series</a></span>
           <span><a href="#">Page</a></span>
         </div>
-        <div id="nav2_header" class="navbar-end flex">
+        </div>
+
+        <div id="nav2_header" class="navbar-end flex mr-5">
           <div tabindex="0" id="search" class="bg-transparent w-max border border-solid flex p-2 rounded-full dropdown dropdown-left">
           <label for="" class="swap swap-rotate">
             <img src="img/magnifying-glass-2.png" alt="" class="w-6 swap-off">
@@ -111,11 +115,37 @@
         </div>
       </div>
       </div>
-      <div id="hero_header" class="w-full h-[30rem] carousel">
-        <div class="carousel-item w-full relative">
-          <img src="img/theBatman.jpeg" alt="" class="w-full object-cover object-top">
+
+      <div id="hero_header" class="w-full h-[40rem] carousel carousel-end">
+        <div class="hero carousel-item w-full bg-cover bg-top hover:bg-center transition-all hover:duration-700" style="background-image: url(img/theBatman.jpeg);">
+          <div class="hero-overlay bg-opacity-60 bg-black">
+          </div>
+          <div class="hero-content text-white text-center inline-block">
+            <h1 class="text-7xl font-extrabold">THE BATMAN</h1><p class="font-bold my-2">UNMASK THE TRUTH - 2 hours 56 Mins</p>
+            <a href="" class="btn bg-red-600">Watch Now</a>
+          </div>
       </div>
+
+      <div class="hero carousel-item w-full bg-cover bg-top hover:bg-center transition-all hover:duration-700" style="background-image: url(img/dune.jpg);">
+        <div class="hero-overlay bg-opacity-60 bg-black">
+        </div>
+        <div class="hero-content text-white text-center inline-block">
+          <h1 class="text-7xl font-extrabold">D U N E</h1><p class="font-bold my-2">IT BEGINS - 2 hours 35 Mins</p>
+          <a href="" class="btn bg-red-600">Watch Now</a>
+        </div>
     </div>
+
+    <div class="hero carousel-item w-full bg-cover bg-top hover:bg-center transition-all hover:duration-700" style="background-image: url(img/pf.jpg);">
+      <div class="hero-overlay bg-opacity-60 bg-black">
+      </div>
+      <div class="hero-content text-white text-center inline-block">
+        <h1 class="text-7xl font-extrabold">PULP FICTION</h1><p class="font-bold my-2">I CAN KEEP A SECRET IF YOU CAN - 2 hours 34 Mins</p>
+        <a href="" class="btn bg-red-600">Watch Now</a>
+      </div>
+  </div>
+
+    </div>
+    
     </div>
 </body>
 </html>
