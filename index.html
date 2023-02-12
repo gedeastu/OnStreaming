@@ -32,7 +32,7 @@
 <body>
     <div class="mx-auto container max-w-full shadow-lg bg-gray-900 h-full">
 
-      <div id="header" class="w-full fixed bg-gray-900 py-2 shadow-lg navbar h-[7rem]">
+      <div id="header" class="w-full fixed bg-gray-900 py-2 shadow-lg navbar h-[7rem] z-10">
         <div class="navbar max-w-full" id="nav_header">
 
         <div class="navbar-start ml-5"> 
@@ -98,7 +98,7 @@
 
           <div id="profile" class="dropdown dropdown-end">
             <img src="img/myPict.jpg" alt="" tabindex="0" class="btn btn-circle bg-transparent border-transparent border-box ml-4 border border-solid border-opacity-50 border-slate-700">
-            <ul tabindex="0" class="dropdown-content menu bg-white shadow-sm rounded-md w-[1] p-2 mt-2">
+            <ul tabindex="0" class="dropdown-content menu bg-white shadow-sm rounded-md w-[10rem] p-2 mt-2">
               <li><a href="#">History</a></li>
               <li><a href="#">Watchlist</a></li>
               <li><a href="#">My Account</a></li>
@@ -118,7 +118,7 @@
       </div>
 
       <div id="hero_header" class="w-full h-[40rem] carousel carousel-end transition">
-        <div class="hero carousel-item w-full bg-cover bg-top hover:bg-center transition-all hover:duration-700" style="background-image: url(img/theBatman.jpeg);">
+        <div class="hero carousel-item w-full bg-cover bg-top" style="background-image: url(img/theBatman.jpeg);">
           <div class="hero-overlay bg-opacity-60 bg-black">
           </div>
           <div class="hero-content text-white text-center inline-block">
@@ -127,7 +127,7 @@
           </div>
       </div>
 
-      <div class="hero carousel-item w-full bg-cover bg-top hover:bg-center transition-all hover:duration-700" style="background-image: url(img/dune.jpg);">
+      <div class="hero carousel-item w-full bg-cover bg-top" style="background-image: url(img/dune.jpg);">
         <div class="hero-overlay bg-opacity-60 bg-black">
         </div>
         <div class="hero-content text-white text-center inline-block">
@@ -136,7 +136,7 @@
         </div>
     </div>
 
-    <div class="hero carousel-item gap-4 bg-cover bg-top hover:bg-center transition-all hover:duration-700" style="background-image: url(img/pf.jpg);">
+    <div class="hero carousel-item gap-4 bg-cover bg-top" style="background-image: url(img/pf.jpg);">
       <div class="hero-overlay bg-opacity-60 bg-black">
       </div>
       <div class="hero-content text-white text-center inline-block">
@@ -148,31 +148,62 @@
     </div>
     
     <div id="main" class="container max-w-1/2 mx-auto">
-      <h1 class="mt-10 mb-5 pb-3 font-bold text-3xl w-full border-b-2 border-opacity-95 border-b-slate-200">Lastest Movie</h1>
-      <div  id="card" class="w-full flex flex-wrap scroll">
-        <div class="card w-64">
-          <img src="img/django.jpg" alt="" class="rounded-xl">
+      <h1 class="mt-10 mb-5 pb-3 font-bold text-3xl w-full border-b-2 border-opacity-95 border-b-slate-200 text-white">Lastest Movies</h1>
+
+
+      <!-- bikin animasi zoom in - belum selesai dibagian rounded dan lainnya -->
+      <div  id="card" class="w-full carousel gap-16">
+        <div class="aspect-[3/4] w-64 carousel-item group relative rounded-xl overflow-hidden">
+          <div class="w-full h-full bg-[url(img/django.jpg)] bg-cover group-hover:scale-110 transition-all group-hover:duration-700 bg-center"></div>
         </div>
-        <div class="card w-64">
-          <img src="img/django.jpg" alt="" class="rounded-xl">
+        <div class="card w-64 carousel-item">
+          <img src="img/hereditary.jpg" alt="" class="rounded-xl">
         </div>
-        <div class="card w-64">
-          <img src="img/django.jpg" alt="" class="rounded-xl">
+        <div class="card w-64 carousel-item">
+          <img src="img/The-Batman-Poster.jpg" alt="" class="rounded-xl">
         </div>
-        <div class="card w-64">
-          <img src="img/django.jpg" alt="" class="rounded-xl">
+        <div class="card w-64 carousel-item">
+          <img src="img/hp.jpg" alt="" class="rounded-xl">
         </div>
-        <div class="card w-64">
-          <img src="img/django.jpg" alt="" class="rounded-xl">
+        <div class="card w-64 carousel-item">
+          <img src="img/bf.jpg" alt="" class="rounded-xl">
         </div>
-        <div class="card w-64">
-          <img src="img/django.jpg" alt="" class="rounded-xl">
+        <div class="card w-64 carousel-item">
+          <img src="img/sw.jpeg" alt="" class="rounded-xl">
         </div>
-        <div class="card w-64">
-          <img src="img/django.jpg" alt="" class="rounded-xl">
+        <div class="card w-64 carousel-item">
+          <img src="img/ap.jpg" alt="" class="rounded-xl">
         </div>
       </div>
     </div>
+
+    <div id="main" class="container max-w-1/2 mx-auto">
+      <h1 class="mt-10 mb-5 pb-3 font-bold text-3xl w-full border-b-2 border-opacity-95 border-b-slate-200 text-white">Greatest Movies</h1>
+      <div  id="card" class="w-full carousel gap-16">
+        <div class="card w-64 carousel-item">
+          <img src="img/gf.jpeg" alt="" class="rounded-xl">
+        </div>
+        <div class="card w-64 carousel-item">
+          <img src="img/ts.jpeg" alt="" class="rounded-xl">
+        </div>
+        <div class="card w-64 carousel-item">
+          <img src="img/The-Batman-Poster.jpg" alt="" class="rounded-xl">
+        </div>
+        <div class="card w-64 carousel-item">
+          <img src="img/hp.jpg" alt="" class="rounded-xl">
+        </div>
+        <div class="card w-64 carousel-item">
+          <img src="img/bf.jpg" alt="" class="rounded-xl">
+        </div>
+        <div class="card w-64 carousel-item">
+          <img src="img/sw.jpeg" alt="" class="rounded-xl">
+        </div>
+        <div class="card w-64 carousel-item">
+          <img src="img/ap.jpg" alt="" class="rounded-xl">
+        </div>
+      </div>
+    </div>
+    
     </div>
 </body>
 </html>
